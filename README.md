@@ -63,17 +63,28 @@ Y= A⊕B
 
 
 **PROGRAM**
+```
+module half_adder_substractor(a, b, sum, carry, diff, borr);
+input a,b;
+output sum, carry, diff, borr;
+assign sum=(a^b);
+assign carry=(a&b); 
+assign diff=(a^b);
+assign borr=(~a&b);
+endmodule
+```
 
-Program for logic gates and verify its truth table in quartus using Verilog programming
-
- Developed by: RegisterNumber: 
+ Developed by: RegisterNumber: 212224230192
  
 **Logic symbol & Truthtable**
 
-**RTL realization Output:** 
+<img width="543" height="327" alt="image" src="https://github.com/user-attachments/assets/926ca336-6f2f-4bc7-86c0-5a029373b7a3" />
 
-**RTL**
+
+**RTL realization Output:** 
+<img width="1880" height="254" alt="image" src="https://github.com/user-attachments/assets/a54aef9a-da75-42a2-a78d-518faffdc925" />
 
 **Result:**
 
+Thus the program of the truth table of logic gates in Quartus II using Verilog programming is executed successfully.
 
