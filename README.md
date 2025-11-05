@@ -1,4 +1,5 @@
-### study-of-basic-gates
+## study-of-basic-gates
+## Date : 31/10/2025
 
 **AIM:** 
 
@@ -63,28 +64,36 @@ Y= A⊕B
 
 
 **PROGRAM**
+
+Program for logic gates and verify its truth table in quartus using Verilog programming
 ```
-module half_adder_substractor(a, b, sum, carry, diff, borr);
+module DE1(a,b,f1,f2,f3,f4,f5,f6,f7);
 input a,b;
-output sum, carry, diff, borr;
-assign sum=(a^b);
-assign carry=(a&b); 
-assign diff=(a^b);
-assign borr=(~a&b);
+output f1,f2,f3,f4,f5,f6,f7;
+assign f1=a&b;
+assign f2=a|b;
+assign f3=~a;
+assign f4=~f1;
+assign f5=~f2;
+assign f6=a^b;
+assign f7=~(a^b);
 endmodule
 ```
 
- Developed by: RegisterNumber: 212224230192
+
  
 **Logic symbol & Truthtable**
 
-<img width="543" height="327" alt="image" src="https://github.com/user-attachments/assets/926ca336-6f2f-4bc7-86c0-5a029373b7a3" />
-
+![657f4f94-291c-49b8-8cef-d23640312e89](https://github.com/user-attachments/assets/d652757c-254e-41d7-a904-2e51a0b5adc3)
 
 **RTL realization Output:** 
-<img width="1880" height="254" alt="image" src="https://github.com/user-attachments/assets/a54aef9a-da75-42a2-a78d-518faffdc925" />
+
+![adaf469a-1f08-4b25-babc-a059b62c86e9](https://github.com/user-attachments/assets/838e2d6c-06a6-4aeb-8d07-dedc779922d4)
+
+**TIMING WAVEFORM**
+
+![Screenshot (1)](https://github.com/user-attachments/assets/2a99d83b-f163-408b-a9c6-7f476345f17b)
 
 **Result:**
 
-Thus the program of the truth table of logic gates in Quartus II using Verilog programming is executed successfully.
-
+    Thus the logic gates are studied and the truth table are verified.
